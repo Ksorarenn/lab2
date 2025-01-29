@@ -7,11 +7,11 @@ public class Main {
         if(x > 1){
             System.out.println("Write the value of n:");
             double n = in.nextDouble();
-            double arcctg = Math.PI/2;
+            double arcctg = 0;
             for(double i = 0;i < n; i++){
                 arcctg += Math.pow(-1,i+1) / ((2*i+1) * Math.pow(x,(2*i+1)));
             }
-            System.out.println("Result: "+ arcctg);
+            System.out.println("Result: "+ (arcctg + Math.PI/2));
         }
         else System.out.println("Value of x is incorrect");
         }
